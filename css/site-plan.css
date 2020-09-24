@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Open+Sans&display=swap');
 
 :root {
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: white;
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --primary-color: #05426E;
+    --secondary-color: #B5B6B8;
+    --accent1-color: #FCE7D7;
+    --accent2-color: #031C2E;
+    --heading-font: "IM Fell English";
+    --paragraph-font: "Open Sans";
 }
 
 html {
@@ -26,23 +26,23 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color:
+    color: var(--accent2-color)
 }
 
 header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color:
+    background-color: var(--secondary-color)
 }
 
 header>h1 {
-    color:
+    color: var(--accent2-color)
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
+    color: var(--accent2-color);
     padding: 1em
 }
 
@@ -79,7 +79,7 @@ p {
 }
 
 nav {
-    background-color: ;
+    background-color: var(--accent1-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -97,10 +97,10 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color:
+    color: var(--accent2-color)
 }
 
 nav a:hover {
-    color: ;
-    background-color:
+    color: var(--secondary-color);
+    background-color: var(--accent2-color)
 }
