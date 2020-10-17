@@ -1,18 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Open+Sans&display=swap');
 
-html {
-  background-color: #05426e
+:root {
+  --primary-color: #05426E;
+  --secondary-color: #B5B6B8;
+  --accent1-color: #FCE7D7;
+  --accent2-color: #031C2E;
 }
 
-h1 {
-  font-family: IM Fell English;
-  font-size: 75px;
+html {
+  background-color: var(--primary-color)
+}
+
+body {
+  font-size: 16px;
 }
 
 header {
-  background-color: #b5b6b8;
+  color: var(--accent2-color);
+  background-color: var(--secondary-color);
   max-width: 960px;
   margin: 0 auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head {
+  display: flex;
+  padding-left: 20px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--accent1-color);
+  line-height: 3em;
+  font-family: "Im Fell English", "Apple Chancery", cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.nav ul {
+  padding: 0;
+}
+
+.nav a {
+  padding: 21px;
+}
+
+.nav a:link, .nav a:visited {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--secondary-color);
+  background-color: var(--accent2-color);
+}
+
+.nav li {
+  padding: 0;
+  flex: 1 1 auto;
+}
+
+h1 {
+  font-family: "Im Fell English", "Apple Chancery", cursive;
+  padding-left: 5px;
+  font-size: 30px;
 }
 
 main {
@@ -21,8 +78,22 @@ main {
   margin: 0 auto;
 }
 
+
+h2 {
+  font-family: "Im Fell English", "Apple Chancery", cursive;
+  padding: 10px;
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", Verdana, sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
 footer {
   background-color: #b5b6b8;
-  max-width: 960px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
