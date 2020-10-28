@@ -99,6 +99,7 @@ main {
   margin: 1em;
   padding: 1em;
   text-align: center;
+  font-family: "Open Sans", Verdana, sans-serif;
 }
 
 .action button {
@@ -106,6 +107,7 @@ main {
   width: 10em;
   background-color: var(--accent1-color);
   font-size: 1.2em;
+  font-family: "Im Fell English", "Apple Chancery", cursive;
 }
 
 .famSearch {
