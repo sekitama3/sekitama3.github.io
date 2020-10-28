@@ -71,8 +71,42 @@ main {
   background-color: white;
   max-width: 800px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-gap: 10px;
 }
 
+.banner-box {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner-box img {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.action {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  background-color: rgba(181, 182, 184, 0.6);
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.action button {
+  line-height: 2em;
+  width: 10em;
+  background-color: var(--accent1-color);
+  font-size: 1.2em;
+}
+
+.famSearch {
+  grid-column: 1 / 3;
+}
 
 h2 {
   font-family: "Im Fell English", "Apple Chancery", cursive;
@@ -100,4 +134,10 @@ footer {
 .copyright {
   grid-column: 1 / 3;
   padding: 10px
+}
+
+@media screen and (max-width: 550px) {
+  .______ {
+    display: block;
+  }
 }
