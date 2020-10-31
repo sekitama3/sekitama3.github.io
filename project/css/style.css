@@ -76,9 +76,10 @@ main {
   max-width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 395px 395px;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 20px;
+  place-items: center;
 }
 
 .banner-box {
@@ -132,7 +133,7 @@ p {
   margin: 0;
 }
 
-.homeImg, .weddImg {
+.homeImg, .weddImg, .famImg {
   border: 1px solid var(--secondary-color);
   box-shadow: 5px 5px 5px #999;
 }
