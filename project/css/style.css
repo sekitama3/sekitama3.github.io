@@ -126,6 +126,11 @@ p {
   margin: 0;
 }
 
+.homeImg, .famImg, .weddImg {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 5px 5px 5px #999;
+}
+
 footer {
   background-color: #b5b6b8;
   max-width: 840px;
@@ -135,6 +140,7 @@ footer {
   justify-items: center;
   align-items: center;
   grid-gap: 10px;
+  font-family: "Open Sans", Verdana, sans-serif;
 }
 
 .copyright {
