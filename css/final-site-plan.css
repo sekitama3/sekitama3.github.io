@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Cinzel:wght@500&family=Eagle+Lake&display=swap');
 
 :root {
   --primary-color: #600706;
   --secondary-color: #929F56;
   --accent1-color: #E4C425;
   --accent2-color: #E5E9F1;
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif
+  --heading-font: "Eagle Lake";
+  --sub-heading-font: Cinzel;
+  --paragraph-font: "Baloo Bhaina 2";
 }
 
 html {
@@ -24,14 +25,12 @@ img {
   max-width: 100%
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2 {
   font-family: var(--heading-font);
-  color:
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--sub-heading-font);
 }
 
 header {
@@ -41,8 +40,8 @@ header {
   background-color: var(--primary-color)
 }
 
-header>h1 {
-  color:
+header>div {
+  font-family: var(--sub-heading-font);
 }
 
 p {
@@ -109,4 +108,8 @@ nav a:visited {
 nav a:hover {
   color: ;
   background-color:
+}
+
+footer {
+  font-family: var(--paragraph-font);
 }
