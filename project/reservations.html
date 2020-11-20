@@ -23,6 +23,56 @@
       </ul>
     </nav>
   </header>
+  <form>
+    <div>
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="(123)456-7890">
+    </div>
+    <div>
+      Accommodation Type
+      <div>
+        <input type="radio" name="accomType" id="missionary">
+        <label for="missionary">Temple Missionary</label>
+      </div>
+      <div>
+        <input type="radio" name="accomType" id="famBaby">
+        <label for="famBaby">Family (babysitter needed)</label>
+      </div>
+      <div>
+        <input type="radio" name="accomType" id="youth">
+        <label for="youth">Youth Group (multiple rooms)</label>
+      </div>
+      <div>
+        <input type="radio" name="accomType" id="wedding">
+        <label for="wedding">Wedding (reception hall)</label>
+      </div>
+    </div>
+    <div>
+      <label for="arrival">Arrival Date & Time</label>
+      <input type="date">
+      <input type="time">
+    </div>
+    <div>
+      <label for="departure">Departure Date</label>
+      <input type="date">
+    </div>
+    <div>
+      <label for="shuttle">Temple Shuttle</label>
+      <select name="shuttle" id="shuttle">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <button type="submit">Reserve Now</button>
+  </form>
 </body>
 
 </html>
