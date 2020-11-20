@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Reserve accommodations for your trip to any temple in the Church of Jesus Christ of Latter-day Saints.">
   <title>Reservations | Temple Inn & Suites</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -23,56 +25,100 @@
       </ul>
     </nav>
   </header>
-  <form>
-    <div>
-      <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" placeholder="John Doe" required>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone" placeholder="(123)456-7890">
-    </div>
-    <div>
-      Accommodation Type
+  <main>
+    <h1>Reserve Your Stay Today!</h1>
+    <form>
       <div>
-        <input type="radio" name="accomType" id="missionary">
-        <label for="missionary">Temple Missionary</label>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
       </div>
       <div>
-        <input type="radio" name="accomType" id="famBaby">
-        <label for="famBaby">Family (babysitter needed)</label>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
       </div>
       <div>
-        <input type="radio" name="accomType" id="youth">
-        <label for="youth">Youth Group (multiple rooms)</label>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="(123)456-7890">
       </div>
       <div>
-        <input type="radio" name="accomType" id="wedding">
-        <label for="wedding">Wedding (reception hall)</label>
+        <label for="temple">Temple Location</label>
+        <select name="temple" id="temple">
+          <option value="select">Please Choose One</option>
+          <option value="anchorage">Anchorage Alaska Temple</option>
+          <option value="atlanta">Atlanta Georgia Temple</option>
+          <option value="birmingham">Birmingham Alabama Temple</option>
+          <option value="bismarck">Bismarck North Dakota Temple</option>
+          <option value="boise">Boise Idaho Temple</option>
+          <option value="bountiful">Bountiful Utah Temple</option>
+          <option value="chicago">Chicago Illinois Temple</option>
+          <option value="lauderdale">Fort Lauderdale Florida Temple</option>
+          <option value="hartford">Hartford Connecticut Temple</option>
+          <option value="falls">Idaho Falls Idaho Temple</option>
+          <option value="jordanriv">Jordan River Utah Temple</option>
+          <option value="kansas">Kansas City Missouri Temple</option>
+          <option value="kona">Kona Hawaii Temple</option>
+          <option value="vegas">Las Vegas Nevada Temple</option>
+          <option value="logan">Logan Utah Temple</option>
+          <option value="london">London England Temple</option>
+          <option value="angeles">Los Angeles California Temple</option>
+          <option value="manti">Manti Utah Temple</option>
+          <option value="nauvoo">Nauvoo Illinois Temple</option>
+          <option value="ogden">Ogden Utah Temple</option>
+        </select>
       </div>
+      <div>
+        Accommodation Type
+        <div>
+          <input type="radio" name="accomType" id="missionary">
+          <label for="missionary">Temple Missionary</label>
+        </div>
+        <div>
+          <input type="radio" name="accomType" id="famBaby">
+          <label for="famBaby">Family (babysitter needed)</label>
+        </div>
+        <div>
+          <input type="radio" name="accomType" id="youth">
+          <label for="youth">Youth Group (multiple rooms)</label>
+        </div>
+        <div>
+          <input type="radio" name="accomType" id="wedding">
+          <label for="wedding">Wedding (reception hall)</label>
+        </div>
+      </div>
+      <div>
+        <label for="arrival">Arrival Date & Time</label>
+        <input type="date" name="arrivaldate" id="arrival">
+        <input type="time" name="arrivaltime" id="arrival">
+      </div>
+      <div>
+        <label for="departure">Departure Date</label>
+        <input type="date" name="departdate" id="departure">
+      </div>
+      <div>
+        <label for="shuttle">Temple Shuttle</label>
+        <select name="shuttle" id="shuttle">
+          <option value="yes">Yes, I will need the shuttle</option>
+          <option value="no">No, I do not need the shuttle</option>
+        </select>
+      </div>
+      <button type="submit">Reserve Now</button>
+    </form>
+  </main>
+  <footer>
+    <p>
+      <strong>Temple Inn & Suites Headquarters</strong><br>
+      355 Wisconsin Avenue, Bethesda, MD 20814 <br>
+      215-829-9999 | info@templinn.com
+    </p>
+    <div class="social">
+      <a href="http://facebook.com"><img src="images/facebook.png" alt="facebook"></a>
+      <a href="http://twitter.com"><img src="images/twitter.png" alt="twitter"></a>
+      <a href="http://instagram.com"><img src="images/instagram.png" alt="instagram"></a>
     </div>
-    <div>
-      <label for="arrival">Arrival Date & Time</label>
-      <input type="date">
-      <input type="time">
+    <div class="copyright">
+      Copyright &copy; 2020 Temple Inn & Suites | All Rights Reserved | Privacy and Cookie Statement | Sierra Ekenstam
     </div>
-    <div>
-      <label for="departure">Departure Date</label>
-      <input type="date">
-    </div>
-    <div>
-      <label for="shuttle">Temple Shuttle</label>
-      <select name="shuttle" id="shuttle">
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-    </div>
-    <button type="submit">Reserve Now</button>
-  </form>
+  </footer>
 </body>
 
 </html>
