@@ -85,6 +85,28 @@ main {
   grid-column-gap: 10px;
   grid-row-gap: 20px;
   place-items: center;
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+.amenities {
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: left;
+}
+
+li {
+  padding: 5px;
+}
+
+.receplay {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.playroom, .reception, .exercise {
+  margin: 10px;
+  box-shadow: 5px 5px 5px #999;
 }
 
 .spot {
