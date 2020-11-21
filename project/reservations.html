@@ -7,7 +7,7 @@
   <meta name="description"
     content="Reserve accommodations for your trip to any temple in the Church of Jesus Christ of Latter-day Saints.">
   <title>Reservations | Temple Inn & Suites</title>
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,9 +25,10 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Reserve Your Stay Today!</h1>
-    <form>
+  <main class="reserve">
+    <h1 class="reshead">Reserve Your Stay Today!</h1>
+    <img class="lauderdale" src="images/lauderdale3.jpg" alt="Fort Lauderdale Temple">
+    <form class="form">
       <div>
         <label for="name">Full Name</label>
         <input type="text" name="name" id="name" placeholder="John Doe" required>
@@ -101,7 +102,7 @@
           <option value="no">No, I do not need the shuttle</option>
         </select>
       </div>
-      <button type="submit">Reserve Now</button>
+      <button type="submit" class="resnow">Reserve Now</button>
     </form>
   </main>
   <footer>
