@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Cinzel:wght@500&family=Eagle+Lake&display=swap');
+
+:root {
+  --primary-color: #600706;
+  --secondary-color: #929F56;
+  --accent1-color: #B69B16;
+  --accent2-color: #BDB9B3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  width: 130px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent1-color);
+  height: 51%;
+  position: fixed;
+  overflow: auto;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid var(--accent1-color);
+  font-family: "Eagle Lake";
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+header {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Eagle Lake";
+}
+
+h2 {
+  font-family: Cinzel;
+}
