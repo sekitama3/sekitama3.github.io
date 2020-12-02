@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Card</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+    
+    .card {
+      width: 320px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px 2px #777;
+      overflow: hidden;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    p {
+      margin: 10px;
+    }
+
+    footer {
+      display: flex;
+    }
+
+    .viewButton {
+      margin: 0 0 5px 5px;
+      padding: 5px;
+      color: #555;
+    }
+
+    .editButton {
+      margin: 0 0 5px 0;
+      padding: 5px;
+      color: #555;
+    }
+
+    span {
+      color: #555;
+      font-size: .8em;
+      margin: 5px 5px 5px 12em;
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <img src="https://picsum.photos/320/240" alt="picture">
+    <p>This is a sample paragraph mainly because I did not want to copy exactly everything from the example given.</p>
+    <footer>
+      <button class="viewButton">View</button>
+      <button class="editButton">Edit</button>
+      <span>9 mins</span>
+    </footer>
+  </article>
+</body>
+</html>
