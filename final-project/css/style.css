@@ -7,6 +7,14 @@
   --accent2-color: #BDB9B3;
 }
 
+html {
+  background-color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--accent2-color);
+}
+
 ul {
   list-style-type: none;
   margin: 10px;
@@ -15,7 +23,6 @@ ul {
   background-color: var(--primary-color);
   border: 1px solid var(--accent1-color);
   height: 51%;
-  position: fixed;
   overflow: auto;
 }
 
@@ -41,9 +48,51 @@ li a:hover {
   color: var(--primary-color);
 }
 
-header {
-  max-width: 840px;
+.gridarea {
   margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  max-width: 840px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+}
+
+header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 3em;
+  padding: 15px;
+  grid-area: header;
+  align-items: center;
+}
+
+.logo {
+  justify-self: right;
+}
+
+nav {
+  padding: 7px;
+  grid-area: nav;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+footer {
+  padding: 7px;
+  font-size: smaller;
+  grid-area: footer;
+  text-align: center;
 }
 
 h1 {
@@ -52,4 +101,19 @@ h1 {
 
 h2 {
   font-family: Cinzel;
+}
+
+@media screen and (max-width: 550px) {
+  .gridarea {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
 }
