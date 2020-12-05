@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="gridarea">
+<body>
   <header>
     <img src="images/logo.png" alt="Logo" class="logo">
     <h1>Sierra Ekenstam</h1>
@@ -22,7 +22,7 @@
       <li><a href="explore.html">Explore Rynum</a></li>
     </ul>
   </nav>
-  <main>
+  <main class="gridarea">
     <article class="card">
       <img src="images/self1.jpg" alt="Sierra Ekenstam" class="self1">
       <h2>About the Author</h2>
@@ -31,24 +31,34 @@
         <button class="readMore">Read More</button>
       </footer>
     </article>
-    <script>
-      const nav = document.querySelector('#navigation');
-      let navTop = nav.offsetTop;
-  
-      function scrollNav() {
-        console.log('navTop =' + navTop);
-        console.log('scrollY =' + window.scrollY);
-        if (window.scrollY >= navTop) {
-          document.body.style.paddingTop = nav.offsetHeight + 'px';
-          document.body.classList.add('fixed-nav');
-        } else {
-          document.body.classList.remove('fixed-nav');
-        }
-      }
-  
-      window.addEventListener('scroll', scrollNav)
-    </script>
-    
+    <form action="mailto:sekitama3@gmail.com" method="post" enctype="text/plain" class="contact">
+      <h2>Contact Sierra Here!</h2>
+      <p>Sierra loves to hear from her readers! <br> You can send her an email here.</p>
+      <div class="information">
+        <label for="name">Your First Name:</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="mail">Your Email:</label>
+        <input type="text" name="mail" id="email"><br>
+        <label for="message">Your Message:</label>
+        <textarea name="message" id="message" rows="5"></textarea><br>
+      </div>
+      <input type="submit" value="Send to Sierra!" class="sendButton">
+    </form>
+    <div class="bookcase">
+      <aside>
+        <img src="images/bookcover.png" alt="Taking Flight">
+        <h3>Taking Flight</h3>
+        <p>Twins Heidi and Henry discover a new world in their Grandfather's study. Not knowing the dangers before them,
+          they find themselves new friends and new adventures. Will they be able to handle the reality of this new
+          world?</p>
+      </aside>
+      <aside>
+        <img src="images/bookcover.png" alt="Flying Into the Sun">
+        <h3>Flying Into the Sun</h3>
+        <h4>Coming Soon!</h4>
+        <p>The second installment of the <br> Reaching Yana series.</p>
+      </aside>
+    </div>
   </main>
   <footer>
     <div class="social">

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Cinzel:wght@500&family=Eagle+Lake&display=swap');
 
 :root {
-  --primary-color: #600706;
-  --secondary-color: #929F56;
+  --primary-color: #929F56;
+  --secondary-color: #600706;
   --accent1-color: #B69B16;
   --accent2-color: #BDB9B3;
   --head-font: "Eagle Lake";
@@ -10,11 +10,20 @@
   --paragraph-font: "Baloo Bhaina 2";
 }
 
-h1 {
+html {
+  background-color: var(--secondary-color);
+}
+
+body {
+  background-color: white;
+  max-width: 950px;
+}
+
+h1, h3 {
   font-family: var(--head-font);
 }
 
-h2 {
+h2, h4 {
   font-family: var(--sub-head-font);
 }
 
@@ -30,7 +39,7 @@ ul {
   margin: 0 auto;
   padding: 10px;
   overflow: hidden;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-family: var(--head-font);
 }
 
@@ -39,7 +48,7 @@ li {
 }
 
 li a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
   padding: 10px 20px;
   margin: 0;
@@ -47,14 +56,15 @@ li a {
 }
 
 li a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color)
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 1;
+.gridarea {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 275px;
+  grid-gap: 10px;
 }
 
 .card {
@@ -66,11 +76,72 @@ li a:hover {
   padding: 10px;
   display: grid;
   grid-template-columns: 220px 1fr;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .self1 {
   max-width: 100%;
   grid-row: 1 / 4;
+}
+
+.readMore {
+  font-family: var(--head-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color)
+}
+
+p {
+  font-family: var(--paragraph-font);
+}
+
+form {
+  font-family: var(--paragraph-font);
+  grid-column: 1;
+}
+
+label {
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+}
+
+.information {
+  text-align: left;
+  padding-left: 5em;
+}
+
+input[type=text] {
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 290px;
+}
+
+textarea {
+  font-family: var(--paragraph-font);
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 290px;
+  vertical-align: top;
+}
+
+.sendButton {
+  font-family: var(--head-font);
+  font-size: 15px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.bookcase {
+  grid-row: 1 / 4;
+  grid-column: 2;
 }
 
 footer {
