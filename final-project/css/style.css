@@ -5,115 +5,78 @@
   --secondary-color: #929F56;
   --accent1-color: #B69B16;
   --accent2-color: #BDB9B3;
+  --head-font: "Eagle Lake";
+  --sub-head-font: Cinzel;
+  --paragraph-font: "Baloo Bhaina 2";
 }
 
-html {
-  background-color: var(--secondary-color);
+h1 {
+  font-family: var(--head-font);
+}
+
+h2 {
+  font-family: var(--sub-head-font);
 }
 
 body {
-  background-color: var(--accent2-color);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+nav {
+  over
 }
 
 ul {
   list-style-type: none;
-  margin: 10px;
+  max-width: 700px;
+  margin: 0 auto;
   padding: 10px;
-  width: 130px;
+  overflow: hidden;
   background-color: var(--primary-color);
-  border: 1px solid var(--accent1-color);
-  height: 51%;
-  overflow: auto;
+  font-family: var(--head-font);
 }
 
 li {
-  text-align: center;
-  border-bottom: 1px solid var(--accent1-color);
-  font-family: "Eagle Lake";
-}
-
-li:last-child {
-  border-bottom: none;
+ display: inline;
 }
 
 li a {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
   color: var(--secondary-color);
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0;
+  text-decoration: none;
 }
 
 li a:hover {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--primary-color)
 }
 
-.gridarea {
-  margin: 0 auto;
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.card {
+  width: 500px;
+  box-shadow: 1px 1px 4px 1px var(--accent2-color);
+  border-radius: 5px 0 5px 0;
+  font-family: var(--paragraph-font);
+  margin: 20px auto 20px auto;
+  padding: 10px;
   display: grid;
-  grid-gap: 10px;
-  max-width: 840px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "header header header"
-    "nav main main"
-    "footer footer footer";
+  grid-template-columns: 220px 1fr;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-gap: 3em;
-  padding: 15px;
-  grid-area: header;
-  align-items: center;
-}
-
-.logo {
-  justify-self: right;
-}
-
-nav {
-  padding: 7px;
-  grid-area: nav;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5px;
-  padding: 5px;
+.self1 {
+  max-width: 100%;
+  grid-row: 1 / 4;
 }
 
 footer {
-  padding: 7px;
-  font-size: smaller;
-  grid-area: footer;
-  text-align: center;
-}
-
-h1 {
-  font-family: "Eagle Lake";
-}
-
-h2 {
-  font-family: Cinzel;
-}
-
-@media screen and (max-width: 550px) {
-  .gridarea {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "header"
-      "nav"
-      "main"
-      "footer";
-  }
-
-  header {
-    grid-template-columns: 1fr 1fr;
-  }
+  font-family: var(--paragraph-font);
 }
