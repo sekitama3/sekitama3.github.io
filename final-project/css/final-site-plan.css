@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Cinzel:wght@500&family=Eagle+Lake&display=swap');
 
 :root {
-  --primary-color: #600706;
-  --secondary-color: #929F56;
-  --accent1-color: #E4C425;
-  --accent2-color: #E5E9F1;
-  --heading-font: "Eagle Lake";
-  --sub-heading-font: Cinzel;
+  --primary-color: #929F56;
+  --secondary-color: #600706;
+  --accent1-color: #B69B16;
+  --accent2-color: #BDB9B3;
+  --head-font: "Eagle Lake";
+  --sub-head-font: Cinzel;
   --paragraph-font: "Baloo Bhaina 2";
 }
 
 html {
-  background-color: var(--secondary-color)
+  background-color: var(--primary-color)
 }
 
 body {
@@ -26,22 +26,22 @@ img {
 }
 
 h1, h2 {
-  font-family: var(--heading-font);
+  font-family: var(--head-font);
 }
 
 h3, h4, h5, h6 {
-  font-family: var(--sub-heading-font);
+  font-family: var(--sub-head-font);
 }
 
 header {
   padding: 1em;
   text-align: center;
   color: var(--accent2-color);
-  background-color: var(--primary-color)
+  background-color: var(--secondary-color)
 }
 
 header>div {
-  font-family: var(--sub-heading-font);
+  font-family: var(--sub-head-font);
 }
 
 p {
@@ -67,11 +67,11 @@ p {
 
 .primary {
   background-color: var(--primary-color);
-  color: var(--accent2-color)
 }
 
 .secondary {
-  background-color: var(--secondary-color)
+  background-color: var(--secondary-color);
+  color: var(--accent2-color)
 }
 
 .accent1 {
@@ -84,32 +84,30 @@ p {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--secondary-color);
+  font-family: var(--head-font);
+  text-align: center;
 }
 
 li {
-  text-align: center;
-  border-bottom: 1px solid var(--secondary-color);
-}
-
-li:last-child {
-  border-bottom: none;
+ display: inline;
 }
 
 li a {
-  display: block;
-  color: var(--secondary-color);
-  padding: 8px 16px;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 footer {
