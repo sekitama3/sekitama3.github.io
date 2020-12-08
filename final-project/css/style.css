@@ -93,6 +93,7 @@ li a:hover {
 
 p {
   font-family: var(--paragraph-font);
+  padding: 10px;
 }
 
 form {
@@ -142,6 +143,22 @@ textarea {
 .bookcase {
   grid-row: 1 / 4;
   grid-column: 2;
+}
+
+.char, .place, .event {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--head-font);
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.char:hover, .place:hover, .event:hover {
+  box-shadow: 0 8px 8px 0 rgba(189, 185, 179, 0.75), 0 8px 8px 0 rgba(189, 185, 179, 0.50);
 }
 
 footer {
