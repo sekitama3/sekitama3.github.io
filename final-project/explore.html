@@ -9,17 +9,26 @@
   <title>Sierra Ekenstam | Author | Explore Rynum</title>
   <link rel="stylesheet" href="css/style.css">
   <script>
-    /*function chars() {
-
+    function chars() {
+      document.getElementById("info").setAttribute("hidden", "");
+      document.getElementById("charie").removeAttribute("hidden");
+      document.getElementById("places").setAttribute("hidden", "");
+      document.getElementById("events").setAttribute("hidden", "");
     }
 
-    function places {
-
+    function places() {
+      document.getElementById("info").setAttribute("hidden", "");
+      document.getElementById("places").removeAttribute("hidden");
+      document.getElementById("charie").setAttribute("hidden", "");
+      document.getElementById("events").setAttribute("hidden", "");
     }
 
     function events() {
-
-    } */
+      document.getElementById("info").setAttribute("hidden", "");
+      document.getElementById("events").removeAttribute("hidden");
+      document.getElementById("places").setAttribute("hidden", "");
+      document.getElementById("charie").setAttribute("hidden", "");
+    }
 
     //somehow i need to get these to show different info on the same page....
   </script>
@@ -49,22 +58,40 @@
     <button class="event" onclick="events()">Events</button>
     <div id="info">
       <p>
-        Rynum is a magical planet outside of the solar system we have known all our lives. In fact, it is part of its
-        very own solar system in the very center of a nebula (which acts as a barrier to keep in all magic particles).
-        While unknown to Earthians, the people of Rynum have studied their own solar system. Rynum is the second planet
-        from the sun and not the only one that is inhabitable. Rynum's sister planet has nearly the same atmosphere as
-        Rynum, but it has yet to be colonized due to there being an over-abundance of carnivorous plants. The other
-        planet that holds life is Eebor, the gas giant similar to our own Jupiter. A small colony has sprung up there
-        underneath all the gases where there is a breathable atmosphere (granted, there are a few side effects from all
-        the other gases).
+        Rynum is a magical planet outside of the solar system we have known all our lives. In fact, it is part of its very own solar system in the very center of a nebula (which acts as a barrier to keep in all magic particles). While unknown to Earthians, the people of Rynum have studied their own solar system. Rynum is the second planet from the sun and not the only one that is inhabitable. Rynum's sister planet has nearly the same atmosphere as Rynum, but it has yet to be colonized due to there being an over-abundance of carnivorous plants. The other planet that holds life is Eebor, the gas giant similar to our own Jupiter. A small colony has sprung up there underneath all the gases where there is a breathable atmosphere (granted, there are a few side effects from all the other gases).
       </p>
       <p>
         Rynum itself contains unique characteristics. No where else can there be found elves and dwarves, dragons and
-        mages, fairies and humans all coexisting as in many famous Earthian stories. Portals are another facet unique to
-        Rynum. Though originally the portals did not exist, they dot the land (even some parts of the sea) and connect
-        Rynum to Earth.
+        mages, fairies and humans all coexisting as in many famous Earthian stories. Portals are another facet unique to Rynum. Though originally the portals did not exist, they dot the land (even some parts of the sea) and connect Rynum to Earth.
       </p>
-      <!--<p>Click on the buttons above to learn more about Rynum.</p>-->
+      <p>Click on the buttons above to learn more about Rynum.</p>
+    </div>
+    <div id="charie" hidden>
+      <img src="" alt="Heidi">
+      <p>
+        Name: Heidi <br>
+        Age: 17 <br>
+        Birthday: April 3 <br>
+        Hair: Blonde, short, always worn down <br>
+        Eyes: Brown <br>
+        Height: 5' 8 1/2"
+      </p>
+      <p>
+        Heidi grew up with her older twin brother Henry under the care of their grandfather, a kind-hearted man named Charles. She never knew her parents, though a picture of her mother sat on her grandfather's desk in his study. Though she loved her grandfather dearly, she was the closest to her brother. She always knew that if there was no one there for her, Henry would be.
+      </p>
+      <p>
+        As she grew up, Heidi found her passion in everything fantasy. She explored other worlds through reading, movies, and even video games. When she was not learning more about the fantasy worlds, she would draw, even so far as to doodle in class. When she and her brother discovered Rynum, it was as if every single one of her dreams had come true.
+      </p>
+      <img src="" alt="">
+      <p>
+        During her adventures on Rynum, there was a point when she was known as Star Fire. As Star Fire, Heidi was the symbol of a revolution she didn't want to start. She had forgotten everything in her past and merely wanted to know who she really was. Heidi's deeply rooted moral compass lead to Star Fire defending the weak and bolstering the spirits of those who had lost the will to fight. Even after she found her true self, the name "Star Fire" continued on centuries later as a symbol of freedom and peace throughout Rynum.
+      </p>
+    </div>
+    <div id="places" hidden>
+
+    </div>
+    <div id="events" hidden>
+
     </div>
   </main>
   <footer>
