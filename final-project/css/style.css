@@ -161,7 +161,33 @@ textarea {
   box-shadow: 0 8px 8px 0 rgba(189, 185, 179, 0.75), 0 8px 8px 0 rgba(189, 185, 179, 0.50);
 }
 
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 75%;
+}
 
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  font-family: var(--paragraph-font);
+  width: 14.3%;
+}
+
+td {
+  height: 95px;
+}
+
+.holiday {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.eventList {
+  list-style: circle;
+}
 
 footer {
   font-family: var(--paragraph-font);
