@@ -161,6 +161,20 @@ textarea {
   box-shadow: 0 8px 8px 0 rgba(189, 185, 179, 0.75), 0 8px 8px 0 rgba(189, 185, 179, 0.50);
 }
 
+.heidi {
+  float: left;
+  margin: 10px;
+  box-shadow: 0 8px 8px 0 rgba(189, 185, 179, 0.50);
+}
+
+.charfact {
+  text-align: left;
+}
+
+.tearpool {
+  box-shadow: 5px 5px 5px 5px rgba(189, 185, 179, 0.50);
+}
+
 table {
   border: 1px solid black;
   border-collapse: collapse;
