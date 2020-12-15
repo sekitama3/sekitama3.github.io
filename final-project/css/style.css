@@ -145,6 +145,15 @@ textarea {
   grid-column: 2;
 }
 
+.system {
+  margin: 10px;
+}
+
+.self2 {
+  float: right;
+  margin: 10px;
+}
+
 .char, .place, .event {
   background-color: var(--primary-color);
   color: var(--secondary-color);
