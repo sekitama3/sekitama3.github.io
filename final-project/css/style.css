@@ -31,6 +31,7 @@ body {
   margin: 0 auto;
   text-align: center;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -252,6 +253,7 @@ td {
 /* Place the container to the left */
 .left {
   left: 0;
+  max-width: 370px;
 }
 
 /* Place the container to the right */
@@ -298,6 +300,7 @@ td {
   background-color: var(--accent2-color);
   position: relative;
   border-radius: 6px;
+  max-width: 310px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
